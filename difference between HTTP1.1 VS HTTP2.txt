@@ -1,0 +1,35 @@
+
+
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP 1.1
+1) Introduced in 1997
+2) internet landsscape was constantly changing with websites becoming more dynamic and heavy
+3) Features like cors,keep-alive (most important one) was introduced in this update,
+4) HOL-head of line blocking
+5) Repeatition of header data
+6) More focuss on ggzip,minifying css/js,cachingg.
+7) That specification was obsoleted by RFC 2616 in 1999, which was likewise replaced by the RFC 7230 family of RFCs in 2014.
+8) HTTP is a protocol which allows the fetching of resources, such as HTML documents. 
+9) It is the foundation of any data exchange on the Web and it is a client-server protocol,
+   which means requests are initiated by the recipient, usually the Web browser. 
+10) A complete document is reconstructed from the different sub-documents fetched, for instance text, layout description, images, videos, scripts, and more.
+
+HTTP 2.0
+1) Hpack: Header data is separate from request data and can be zipped.
+2) HPACK also enables reuse of header data which is repeated in every request,
+3) HPACK reduces HTTP request size.
+4) PUSH: push framess enables us to send mandatory resources in advance along with an HTTP respones,
+5) PUSH frames should be used with care as this can lead to increase in size of the HTTP response,
+6) you can keep on using gzip,leverage browser caching, minify css/js,to further improve the speed.
+7) almost all the modern web servers support this,
+8) do not worry about losing users as users using old browsers with support of HTTP 11.1 will be served the website over HTTP1.1 only,
+9) HTTP/2 (originally named HTTP/2.0) is a major revision of the HTTP network protocol used by the World Wide Web.
+   It was derived from the earlier experimental SPDY protocol, originally developed by Google.
+10) HTTP/2 was developed by the HTTP Working Group (also called httpbis, where "bis" means "second") of the Internet Engineering Task Force. 
+11) HTTP/2 is the first new version of HTTP since HTTP 1.1, which was standardized in RFC 2068 in 1997. 
+12) The Working Group presented HTTP/2 to IESG for consideration as a Proposed Standard in December 2014, 
+and IESG approved it to publish as Proposed Standard on February 17, 2015. 
+13) The HTTP/2 specification was published as RFC 7540 in May 14, 2015.
+14) The standardization effort was supported by Chrome, Opera, Firefox, Internet Explorer 11, Safari, Amazon Silk, and Edge browsers. 
+Most major browsers had added HTTP/2 support by the end of 2015.
